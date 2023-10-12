@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "target-todoist": {
+    "comet-todoist": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/target-todoist",
+            "outputPath": "dist/comet-todoist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "target-todoist:build:production"
+              "browserTarget": "comet-todoist:build:production"
             },
             "development": {
-              "browserTarget": "target-todoist:build:development"
+              "browserTarget": "comet-todoist:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "target-todoist:build"
+            "browserTarget": "comet-todoist:build"
           }
         },
         "test": {
